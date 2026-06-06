@@ -26,7 +26,7 @@ public class MedicalRecord {
   @JoinColumn(name = "patient_id", referencedColumnName = "id", nullable = false, unique = true)
   private Patient patient;
 
-  @NotNull(message = "La fecha de creacion es obligatoria")
+  //@NotNull(message = "La fecha de creacion es obligatoria")
   @Column(name = "creation_date", nullable = true)
   private LocalDate creationDate;
 

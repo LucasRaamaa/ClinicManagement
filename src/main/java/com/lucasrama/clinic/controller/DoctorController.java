@@ -22,6 +22,7 @@ public class DoctorController {
     this.doctorService = doctorService;
   }
 
+
   @PreAuthorize("hasAuthority('ADMIN')")
   @PostMapping
   public ResponseEntity<Doctor> registerDoctor(@Valid @RequestBody Doctor doctor){

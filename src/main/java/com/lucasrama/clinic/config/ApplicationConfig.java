@@ -20,6 +20,7 @@ public class ApplicationConfig {
   public ApplicationConfig(UserRepository userRepository) {
     this.userRepository = userRepository;
   }
+  
 
   @Bean
   public UserDetailsService userDetailsService() {

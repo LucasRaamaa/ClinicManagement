@@ -23,6 +23,7 @@ public class TreatmentController {
     this.treatmentService = treatmentService;
   }
 
+
   @PreAuthorize("hasAuthority('DOCTOR')")
   @PostMapping
   public ResponseEntity<Treatment> createTreatment(@Valid @RequestBody Treatment treatment) {
